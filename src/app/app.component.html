@@ -49,8 +49,10 @@
 
   <h1>Listado Clientes</h1>
 
-  <table *ngFor="let item of arrayClientes">
-    <app-lista nombre = "{{item.nombre}}" cif="{{item.cif}}" direccion="{{item.direccion}}" grupo="{{item.grupo}}"></app-lista>
+  <table >
+    <tr class="lineado" *ngFor="let item of arrayClientes" >
+      <app-lista [cliente] = "item"></app-lista>
+    </tr>
   </table>
 </div>
 

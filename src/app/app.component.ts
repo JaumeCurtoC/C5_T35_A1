@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +24,8 @@ export class AppComponent{
 
   addCliente(): void{
 
-    console.log(this.cliente.value)
     this.arrayClientes.push(this.cliente.value);
+
   }
 
 }

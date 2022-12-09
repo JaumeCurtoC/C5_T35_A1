@@ -8,10 +8,7 @@ import { FormArray, FormGroup } from '@angular/forms';
 })
 export class ListaComponent implements OnInit {
 
-@Input() nombre: string | undefined;
-@Input() cif: string | undefined;
-@Input() direccion: string | undefined;
-@Input() grupo: string | undefined;
+@Input() cliente: any;
 
   constructor() { }
 
